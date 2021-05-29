@@ -42,9 +42,8 @@ public class GameScreen extends JPanel implements Runnable, KeyListener {
     }
 
     public void update() {
-        if (gameState == GAME_PLAY_STATE) {
+        if (gameState == GAME_PLAY_STATE)
             obstacle.update();
-        }
         if(obstacle.posX <= 50 + Player.PlayerSizeX && obstacle.posX >= 50 - Obstacle.ObstacleSizeX)
             if(player.PlayerY >= GROUND - Player.PlayerSizeY - Obstacle.ObstacleSizeY)
                 gameState = GAME_OVER_STATE;

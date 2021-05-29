@@ -28,12 +28,11 @@ public class Obstacle {
     }
 
     public void draw(Graphics g) throws IOException {
-        if(swapIMG%20 == 0) {
+        if(swapIMG%20 == 0)
             image = ImageIO.read(new File("data/images/Obstacle.png"));
-        }
-        else if(swapIMG%10 == 0){
+
+        else if(swapIMG%10 == 0)
             image = ImageIO.read(new File("data/images/Obstacle2.png"));
-        }
 
         g.drawImage(image, posX, posY, null);
         ++swapIMG;
@@ -48,7 +47,6 @@ public class Obstacle {
 
         posX -= speed;
         rect.x = posX;
-
         rect.width = image.getWidth();
         rect.height = image.getHeight();
 

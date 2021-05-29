@@ -46,9 +46,9 @@ public class Player {
                         e.printStackTrace();
                     }
 
-                    if (BOSS_SOUND != null) {
+                    if (BOSS_SOUND != null)
                         BOSS_SOUND.play();
-                    }
+
                     plr = false;
                 }
                 g.drawImage(image2, 50, PlayerY, null);
