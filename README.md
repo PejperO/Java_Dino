@@ -1,2 +1,2 @@
 # Java_dino
-beta version ( v0.63 )
+RTM version ( v1.0 )
