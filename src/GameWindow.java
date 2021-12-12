@@ -17,7 +17,7 @@ public class GameWindow extends JFrame{
         gameScreen.startGame();
     }
 
-    public  static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         GameWindow gw = new GameWindow();
         gw.setVisible(true);
     }
